@@ -25,6 +25,8 @@ function handleKeyDown(e) {
 
 function handleSignUpButtonClick() {
   if (!input.checkValidity()) return;
+
+  submitForm();
 }
 
 function resetForm() {
