@@ -1,4 +1,7 @@
-# Minerva Analytics
+
+# <img src="./assets/images/Minerav_Logo_FullColor.png" alt="drawing" width="300" style="background: white;"/>
+
+
 
 Task: Build out the website according to the mockups/assets provided.
 
