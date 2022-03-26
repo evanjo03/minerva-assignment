@@ -1,4 +1,4 @@
-# Minerva Analytics Assignment
+# Minerva Analytics
 
 Task: Build out the website according to the mockups/assets provided.
 
