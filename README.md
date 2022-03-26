@@ -1,7 +1,4 @@
-
-# <img src="./assets/images/Minerav_Logo_FullColor.png" alt="drawing" width="300" style="background: white;"/>
-
-
+# <img src="./assets/images/Minerva_Logo_FullColor.png" alt="drawing" width="300"/>
 
 Task: Build out the website according to the mockups/assets provided.
 
@@ -20,3 +17,9 @@ cd minerva-assignment
 ## Future Improvements
 
 There are definitely a few things that can be improved with this feature. As the application grows, it would make sense to set up build steps that include things like potentially minifying js, css and other assets.
+
+## Deployment
+
+The application is deployed and available for viewing here:
+
+https://evanjo03.github.io/minerva-assignment/
