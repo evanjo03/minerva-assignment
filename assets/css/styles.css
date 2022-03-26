@@ -208,6 +208,7 @@ body {
   background-color: var(--black);
   color: var(--white);
   opacity: 0.9;
+  transition: opacity 200ms;
   border-radius: 6px;
 }
 
