@@ -18,9 +18,8 @@ function handleInput() {
 function handleKeyDown(e) {
   if (!(e.key === "Enter" || e.keyCode === 13) || !input.checkValidity())
     return;
-  alert(`The email to submit is "${input.value}".`);
-  input.value = "";
-  button.disabled = true;
+
+  submitForm();
 }
 
 function handleSignUpButtonClick() {
