@@ -16,7 +16,7 @@ cd minerva-assignment
 
 ## Future Improvements
 
-There are definitely a few things that can be improved with this feature. As the application grows, it would make sense to set up build steps that include things like potentially minifying js, css and other assets.
+There are definitely a few things that can be improved with this feature. As the application grows, it would make sense to set up build steps that include things like potentially minifying/compressing js, css and other assets.
 
 ## Deployment
 
