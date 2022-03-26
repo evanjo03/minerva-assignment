@@ -4,8 +4,119 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;700&family=Poppins:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./assets/images/Minerav_Icon_FullColor.png"
+    />
+    <script type="text/javascript" src="./assets/js/app.js" defer></script>
     <title>Minerva Analytics</title>
+    <style>
+     .nav__hamburger {
+       padding: 1rem;
+        display: none;
+     }
+
+     .hamburger__item {
+       color: var(--primary);
+       padding: .5rem;
+     }
+
+     #hamburger__menu {
+       flex-direction: column;
+       align-items: flex-end;
+       display: none;
+     }
+
+     @media (max-width: 650px) {
+      .main__container {
+        flex-direction: column;
+      }
+
+      .nav__menu {
+        display: none;
+      }
+
+      .navNarrow__menu {
+        display: flex;
+      }
+
+      .footer__nav {
+        justify-content: center;
+      }
+    }
+
+    @media (max-width: 450px) {
+      .navNarrow__menu {
+        display: none;
+      }
+
+      .nav__hamburger {
+        display: flex;
+      }
+    }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <main class="main__container">
+      <div class="left__container">
+        <div class="navLeft__wrapper">
+          <div class="nav__home"><a href="#"><img class="nav__logo" src="./assets/images/Minerav_Logo_FullColor.png"></a></div>
+          <div class="navNarrow__menu">
+            <a class="navNarrow__anchor" href="#"">ABOUT US</a>
+            <a class="navNarrow__anchor" href="#">ARTICLES</a>
+          </div>
+      
+          <div class="nav__hamburger">
+            <a href="javascript:void(0);" class="icon" onclick="onHamburgerClick()">
+              <i class="fa fa-bars fa-2x"></i>
+            </a>
+          </div>
+      
+        </div>
+        <div id="hamburger__menu">
+          <a class="hamburger__item" href="#">ABOUT US</a>
+          <a class="hamburger__item" href="#">ARTICLES</a>
+        </div>
+        <div class="content__container">
+          <h1 class="content__header">Something <span class="content__headingSecondary">for Everyone</span></h1>
+          <p class="content__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores sed atque culpa modi mollitia at molestiae, doloremque itaque aliquam beatae magni ipsum tempora aliquid! Eius necessitatibus totam voluptas quibusdam enim. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus aspernatur porro vero obcaecati fugiat iure cumque labore consequatur eius recusandae, voluptates cupiditate blanditiis molestias ea nam tenetur veritatis, illo aliquid.</p>
+          <fieldset class="field__host">  
+            <input placeholder="Enter your email..." class="field__input"/>
+            <button class="field__button">Sign Up</button>
+          </fieldset>
+        </div>
+      </div>
+      <div class="right__container">
+        <div class="navRight__wrapper">
+          <div class="nav__menu">
+            <a class="nav__anchor" href="#"">ABOUT US</a>
+            <a class="nav__anchor" href="#">ARTICLES</a>
+          </div>
+        </div>
+        <div class="content__container">
+          <img src="./assets/images/Minerva_Graphic.png">
+        </div>
+      </div>
+    </main>
+    <footer class="footer__host">
+      <div class="footer__nav">
+        <a class="footer__anchor" href="#">Terms of Service</a>
+        <a class="footer__anchor" href="#">Privacy Policy</a>
+        <a class="footer__anchor" href="#">CA Privacy Policy</a>
+        <a class="footer__anchor" href="#">Cookie Policy</a>
+        <a class="footer__anchor" href="#">Contact us</a>
+      </div>
+      <div class="footer__cr">
+        <a class="footer__crItem" href="#">Follow us</a>
+        <div class="footer__crItem">© Minerva Analytics 2022</div>
+      </div>
+    </footer>
+  </body>
 </html>

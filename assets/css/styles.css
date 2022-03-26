@@ -1,8 +1,182 @@
 :root {
-  --_primary_color: red;
+  --primary: #27b1d0;
+  --black: #2a2a2a;
+  --gray: #6c6c6c;
+  --white: #ffffff;
 }
 
-* {
-  box-sizing: border-box;
+body {
+  font-family: "Hind", sans-serif;
 }
 
+.left__container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: var(--white);
+}
+
+.right__container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: var(--primary);
+}
+
+.navLeft__wrapper {
+  height: 4.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navRight__wrapper {
+  height: 4.5rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav__home {
+  margin-left: 1rem;
+  padding: 1rem;
+}
+
+.nav__logo {
+  display: block;
+  height: 2.5rem;
+}
+
+.nav__menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.nav__anchor {
+  padding: 1rem;
+  text-decoration: none;
+  color: var(--white);
+}
+
+.navNarrow__menu {
+  display: none;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.navNarrow__anchor {
+  padding: 1rem;
+  text-decoration: none;
+  color: var(--primary);
+}
+
+.main__container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.content__container {
+  margin-top: 3rem;
+  padding: 0 3rem;
+}
+
+.content__header {
+  font-family: "Poppins", sans-serif;
+}
+
+.content__headingSecondary {
+  color: var(--primary);
+}
+
+.content__text {
+  line-height: 1.875rem;
+}
+
+.field__host {
+  display: flex;
+  border: 0;
+  margin: 2rem 0 0 0;
+  padding: 0;
+  min-inline-size: auto;
+}
+
+.field__input {
+  flex: 1;
+  border: 1px solid var(--gray);
+  margin-right: 1rem;
+  padding: 0 0.5rem;
+  min-width: 2rem;
+  border-radius: 0.25rem;
+}
+
+.field__input:focus-visible {
+  outline: none;
+}
+
+.field__button {
+  border: none;
+  padding: 0.5rem 1rem;
+  background-color: var(--black);
+  color: var(--white);
+  opacity: 0.9;
+  border-radius: 0.25rem;
+}
+
+.field__button:disabled {
+  opacity: 0.6;
+}
+
+.field__button:hover:not(:disabled) {
+  transition: 0.3ms opacity all;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.footer__host {
+  padding: 1rem;
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.footer__nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer__cr {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__crItem {
+  margin: 1rem 0;
+}
+
+.footer__anchor {
+  margin: 1rem 1rem 1rem 0;
+  padding-right: 1rem;
+  border-right: 1px solid var(--gray);
+}
+
+.footer__anchor:last-child {
+  border-right: none;
+}
+
+@media (max-width: 650px) {
+  .main__container {
+    flex-direction: column;
+  }
+
+  .nav__menu {
+    display: none;
+  }
+
+  .navNarrow__menu {
+    display: flex;
+  }
+
+  .footer__nav {
+    justify-content: center;
+  }
+}
