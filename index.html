@@ -10,71 +10,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/media-queries.css" />
     <link
       rel="icon"
       type="image/x-icon"
       href="./assets/images/Minerav_Icon_FullColor.png"
     />
+    <style>
+    </style>
     <script type="text/javascript" src="./assets/js/app.js" defer></script>
     <title>Minerva Analytics</title>
-    <style>
-     .nav__hamburger {
-       padding: 1rem;
-        display: none;
-     }
-
-     .nav__hamburgerButton {
-       background-color: var(--white);
-       border: none;
-     }
-
-     .hamburger__item {
-       color: var(--primary);
-       padding: .5rem;
-     }
-
-     .hamburger__menu {
-       flex-direction: column;
-       align-items: flex-end;
-       display: none;
-     }
-
-     @media (max-width: 650px) {
-      .main__container {
-        flex-direction: column;
-      }
-
-      .nav__menu {
-        display: none;
-      }
-
-      .navNarrow__menu {
-        display: flex;
-      }
-
-      .footer__nav {
-        justify-content: center;
-      }
-    }
-
-    @media (max-width: 768px) {
-      .navNarrow__menu {
-        display: none;
-      }
-
-      .nav__hamburger {
-        display: flex;
-      }
-
-      .field__host {
-        flex-direction: column;
-      }
-
-      .field__input {
-        height: 2.5rem;
-      }
-    }
-    </style>
   </head>
   <body>
     <main class="main__container">
@@ -88,14 +33,14 @@
       
           <div class="nav__hamburger">
             <button class="nav__hamburgerButton" id="hamburger-btn">
-              <i class="fa fa-bars fa-2x"></i>
+              <i class="fa fa-bars fa-2x nav__hamburgerIcon"></i>
             </button>
           </div>
       
         </div>
         <div id="hamburger-menu" class="hamburger__menu">
-          <a class="hamburger__item" href="#">ABOUT US</a>
-          <a class="hamburger__item" href="#">ARTICLES</a>
+          <a class="hamburger__anchor" href="#">ABOUT US</a>
+          <a class="hamburger__anchor" href="#">ARTICLES</a>
         </div>
         <div class="content__container">
           <div class="content__header">
@@ -103,8 +48,8 @@
           </div>
           <p class="content__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores sed atque culpa modi mollitia at molestiae, doloremque itaque aliquam beatae magni ipsum tempora aliquid! Eius necessitatibus totam voluptas quibusdam enim. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus aspernatur porro vero obcaecati fugiat iure cumque labore consequatur eius recusandae, voluptates cupiditate blanditiis molestias ea nam tenetur veritatis, illo aliquid.</p>
           <fieldset class="field__host">  
-            <input placeholder="Enter your email..." class="field__input"/>
-            <button class="field__button">Sign Up</button>
+            <input required type="email" id="email-input" placeholder="Enter your email..." class="field__input"/>
+            <button disabled id="submit-btn" class="field__button">Sign Up</button>
           </fieldset>
         </div>
       </div>

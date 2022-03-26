@@ -1,0 +1,39 @@
+@media (max-width: 992px) {
+  .main__container {
+    flex-direction: column;
+  }
+
+  .navRight__wrapper {
+    display: none;
+  }
+
+  .nav__menu {
+    display: none;
+  }
+
+  .navNarrow__menu {
+    display: flex;
+  }
+
+  .footer__nav {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .navNarrow__menu {
+    display: none;
+  }
+
+  .nav__hamburger {
+    display: flex;
+  }
+
+  .field__host {
+    flex-direction: column;
+  }
+
+  .field__input {
+    height: 2.5rem;
+  }
+}
