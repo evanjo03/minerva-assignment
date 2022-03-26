@@ -23,12 +23,17 @@
         display: none;
      }
 
+     .nav__hamburgerButton {
+       background-color: var(--white);
+       border: none;
+     }
+
      .hamburger__item {
        color: var(--primary);
        padding: .5rem;
      }
 
-     #hamburger__menu {
+     .hamburger__menu {
        flex-direction: column;
        align-items: flex-end;
        display: none;
@@ -52,13 +57,21 @@
       }
     }
 
-    @media (max-width: 450px) {
+    @media (max-width: 768px) {
       .navNarrow__menu {
         display: none;
       }
 
       .nav__hamburger {
         display: flex;
+      }
+
+      .field__host {
+        flex-direction: column;
+      }
+
+      .field__input {
+        height: 2.5rem;
       }
     }
     </style>
@@ -74,18 +87,20 @@
           </div>
       
           <div class="nav__hamburger">
-            <a href="javascript:void(0);" class="icon" onclick="onHamburgerClick()">
+            <button class="nav__hamburgerButton" id="hamburger-btn">
               <i class="fa fa-bars fa-2x"></i>
-            </a>
+            </button>
           </div>
       
         </div>
-        <div id="hamburger__menu">
+        <div id="hamburger-menu" class="hamburger__menu">
           <a class="hamburger__item" href="#">ABOUT US</a>
           <a class="hamburger__item" href="#">ARTICLES</a>
         </div>
         <div class="content__container">
-          <h1 class="content__header">Something <span class="content__headingSecondary">for Everyone</span></h1>
+          <div class="content__header">
+            <h1 class="content__headerPrimary">Something</h1><h1 class="content__headerSecondary">for Everyone</h1>
+          </div>
           <p class="content__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores sed atque culpa modi mollitia at molestiae, doloremque itaque aliquam beatae magni ipsum tempora aliquid! Eius necessitatibus totam voluptas quibusdam enim. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus aspernatur porro vero obcaecati fugiat iure cumque labore consequatur eius recusandae, voluptates cupiditate blanditiis molestias ea nam tenetur veritatis, illo aliquid.</p>
           <fieldset class="field__host">  
             <input placeholder="Enter your email..." class="field__input"/>
